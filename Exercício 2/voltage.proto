@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package voltage;
+
+service Voltage {
+    rpc sendVoltage(SendVoltageRequest) returns (SendVoltageResponse);
+}
+
+message SendVoltageRequest {
+    int32 voltage = 1;
+}
+
+message SendVoltageResponse {}
